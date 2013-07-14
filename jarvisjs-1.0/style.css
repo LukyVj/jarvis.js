@@ -1,0 +1,95 @@
+@import 'normalize.css';
+@import 'logo-jarvis.css';
+html,body{
+  width:100%;
+  height:100%;
+  padding:0;margin:0;
+}
+body{
+    overflow-x:hidden;
+}
+/*page style*/
+#demo{
+  padding: 1em;
+  width:60%;
+  margin:auto;
+}
+
+#disclaimer, #usage, #download{
+float: left;
+  background:#eee;
+  padding:.5em 1em;
+  margin:.5em 0;
+  width:100%;
+}
+#demo img{width:300px;display:block; margin:auto}
+code{background:#fff}
+#example{}
+#example div[id*="-jarvis"]{
+  width:100%;
+  height:300px;
+  border:1px solid;
+  margin:5px auto 0;
+}
+
+div[id*="-jarvis"] section{
+  width:70%;
+  float:left;
+}
+div[id*="-jarvis"] aside{
+  width:30%;
+  height:100%;
+  float:left;
+  background:#eee;
+}
+
+#res{color:orange}
+.btn{
+	padding: 4px;
+	border-bottom: 2px solid  #3f689c;
+	background: #4f82c4;
+	color:#fff;
+	font-weight:bold;
+	position: relative;
+}
+.mention:after{
+content:attr(alt);
+display:block;
+color:#999;
+font-size:.6em;
+width:100%;
+margin:4px 63%;
+padding:4px;}
+.btn:active{
+	top:2px;
+	border:0px solid ;
+}
+footer{
+	width:100%;
+	text-align: center;
+	padding: 20px
+}
+#nav {
+display:block;
+width:100%;
+float:left;
+padding:0;
+margin:0 0 40px;
+height:0px;
+}
+#nav ul{padding:0;}
+#nav li{
+list-style:none;
+display:block;
+float:left;
+padding:0;
+margin:0 5px;
+padding:2px 6px 0 0;
+height:20px;
+float:left;
+border-right:1px solid #eee;
+color:#999;
+}
+#nav li:last-child{
+border-right:0;}
+#nav li:hover,#nav li:active{color:#333;}
