@@ -1,0 +1,184 @@
+/*
+== Jarvis.CSS  ========
+component of Jarvis.js
+Version : 1.1; 
+Date : 07/16/13
+Author : @LukyVj
+
+Under M.I.T License : 
+dev.web-gate.fr/MIT
+=======================
+*/
+
+.stocked .jarvis:nth-child(even){
+margin:-100%;
+position:absolute;
+left:-100%;
+/*transition*/
+-webkit-transition:all 1s ease;
+   -moz-transition:all 1s ease;
+     -o-transition:all 1s ease;
+        transition:all 1s ease;
+}
+.stocked .jarvis{
+opacity:0;
+}
+.stocked .jarvis:nth-child(odd){
+margin-top:-1000% !important;
+right:-100% !important;
+/*transition*/
+-webkit-transition:all 0s ease;
+   -moz-transition:all 0s ease;
+     -o-transition:all 0s ease;
+        transition:all 0s ease;
+}
+.stocked .jarvis:nth-child(even){
+margin-left:1000% !important;
+left:100% !important;
+/*transition*/
+-webkit-transition:all 0s ease;
+   -moz-transition:all 0s ease;
+     -o-transition:all 0s ease;
+        transition:all 0s ease;
+}
+.stocked a.jarvis{
+margin-bottom:1000% !important;
+right:100% !important;
+/*transition*/
+-webkit-transition:all 0s ease;
+   -moz-transition:all 0s ease;
+     -o-transition:all 0s ease;
+        transition:all 0s ease;
+}
+.stocked img.jarvis{
+margin-left:1000% !important;
+/*transition*/
+-webkit-transition:all 0s ease;
+   -moz-transition:all 0s ease;
+     -o-transition:all 0s ease;
+        transition:all 0s ease;
+}
+*[class*="jv-"]{
+display:block;
+}
+*[class*="jv-"]:nth-child(odd){
+position:relative;
+/*transition*/
+-webkit-transition:all 1s ease, left 1.2s ease .4s;
+   -moz-transition:all 1s ease, left 1.2s ease .4s;
+     -o-transition:all 1s ease, left 1.2s ease .4s;
+        transition:all 1s ease, left 1.2s ease .4s;
+}
+*[class*="jv-"]:nth-child(even){
+position:relative;
+/*transition*/
+-webkit-transition:all 1s ease 1.2s;
+   -moz-transition:all 1s ease 1.2s;
+     -o-transition:all 1s ease 1.2s;
+        transition:all 1s ease 1.2s;
+}
+*[class*="jv-"]:nth-child(2n+1){
+position:relative;
+/*transition*/
+-webkit-transition:all 1s ease, left 1.2s ease .4s;
+   -moz-transition:all 1s ease, left 1.2s ease .4s;
+     -o-transition:all 1s ease, left 1.2s ease .4s;
+        transition:all 1s ease, left 1.2s ease .4s;
+}
+*[class*="jv-"]:nth-child(3n+2){
+position:relative;
+/*transition*/
+-webkit-transition:all 1.4s ease 1.2s;
+   -moz-transition:all 1.4s ease 1.2s;
+     -o-transition:all 1.4s ease 1.2s;
+        transition:all 1.4s ease 1.2s;
+}
+img[class*="jv-"]{
+/*transition*/
+-webkit-transition:all 3s ease 1.2s !important;
+   -moz-transition:all 3s ease 1.2s !important;
+     -o-transition:all 3s ease 1.2s !important;
+        transition:all 3s ease 1.2s !important;
+}
+img[class*="jv-"]:nth-child(2n+1){
+/*transition*/
+-webkit-transition:all 2s ease .2s !important;
+   -moz-transition:all 2s ease .2s !important;
+     -o-transition:all 2s ease .2s !important;
+        transition:all 2s ease .2s !important;
+}
+a[class*="jv-"]:nth-child(2n+1){
+/*transition*/
+-webkit-transition:all 3s ease .2s !important;
+   -moz-transition:all 3s ease .2s !important;
+     -o-transition:all 3s ease .2s !important;
+        transition:all 3s ease .2s !important;
+}
+/*Loader*/
+#st-screen{
+position:absolute;
+z-index:10;
+width:100%;
+height:100%;
+/*linear-gradient*/
+background:-webkit-gradient(linear,left top,left bottom,from(#fbfbfb),to(#f8f8f8));
+background:-webkit-linear-gradient(#fbfbfb,#f8f8f8);
+background:   -moz-linear-gradient(#fbfbfb,#f8f8f8);
+background:     -o-linear-gradient(#fbfbfb,#f8f8f8);
+background:        linear-gradient(#fbfbfb,#f8f8f8);
+margin:0;
+}
+#loader{
+position:fixed;
+z-index:99;
+bottom:0;
+left:0;
+opacity:0;
+margin:0;
+width:100%;
+height:5px;
+/*linear-gradient*/
+background:-webkit-gradient(linear,50% 0,50% 100%,from(#dd473d),to(#a83026));
+background:-webkit-linear-gradient(-90deg,#dd473d,#a83026);
+background:   -moz-linear-gradient(-90deg,#dd473d,#a83026);
+background:     -o-linear-gradient(-90deg,#dd473d,#a83026);
+background:        linear-gradient(-90deg,#dd473d,#a83026);
+/*transition*/
+-webkit-transition:height .6s ease;
+   -moz-transition:height .6s ease;
+     -o-transition:height .6s ease;
+        transition:height .6s ease;
+}
+#loader.load{
+/*animation*/
+-webkit-animation:load 3s ease 1s;
+   -moz-animation:load 3s ease 1s;
+    -ms-animation:load 3s ease 1s;
+     -o-animation:load 3s ease 1s;
+        animation:load 3s ease 1s;
+}
+@keyframes load{
+0%{width:0%;opacity:1;}
+	98%{width: 100%;opacity:1;height: 5px;}
+	100%{width: 100%;opacity:0;height: 0}
+}
+@-o-keyframes load{
+0%{width:0%;opacity:1;}
+	98%{width: 100%;opacity:1;height: 5px;}
+	100%{width: 100%;opacity:0;height: 0}
+}
+@-ms-keyframes load{
+0%{width:0%;opacity:1;}
+	98%{width: 100%;opacity:1;height: 5px;}
+	100%{width: 100%;opacity:0;height: 0}
+}
+@-moz-keyframes load{
+0%{width:0%;opacity:1;}
+	98%{width: 100%;opacity:1;height: 5px;}
+	100%{width: 100%;opacity:0;height: 0}
+}
+@-webkit-keyframes load{
+0%{width:0%;opacity:1;}
+	98%{width: 100%;opacity:1;height: 5px;}
+	100%{width: 100%;opacity:0;height: 0}
+}
