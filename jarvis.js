@@ -1,8 +1,8 @@
 /*
 == Jarvis.JS  ========
 component of Jarvis.js
-Version : 1.1; 
-Date : 07/16/13
+Version : 1.2; 
+Date : 07/17/13
 Author : @LukyVj
 
 Under M.I.T License : 
@@ -11,6 +11,8 @@ dev.web-gate.fr/MIT
 */
 $(document).ready(function(){
 $('body').attr('id','on-jarvis').addClass('stocked');
+		$("#on-jarvis *,#on-jarvis * *, #on-jarvis * > *, #on-jarvis * * > *").addClass('jarvis');
+		$('.jarvis').find('p').addClass('inner-jarvis');
         $("head").append("<link>");     
         $("body").append("<div id='loader'></div>");
         $("body").append("<div id='st-screen'></div>");
@@ -19,7 +21,7 @@ $('body').attr('id','on-jarvis').addClass('stocked');
         css.attr({
           rel:  "stylesheet",
           type: "text/css",
-          href: "jarvisjs-1.1/jarvis.css"
+          href: "jarvisjs-1.2/jarvis.css"
         });
          setTimeout(function(){
 	          $("#st-screen").fadeOut();
@@ -33,5 +35,6 @@ $("#on-jarvis").each(function() {
              return 'jv-' + (index + 1);
          }); 
      });
+     
   
 });

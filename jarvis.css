@@ -1,8 +1,8 @@
 /*
 == Jarvis.CSS  ========
 component of Jarvis.js
-Version : 1.1; 
-Date : 07/16/13
+Version : 1.2; 
+Date : 07/17/13
 Author : @LukyVj
 
 Under M.I.T License : 
@@ -11,7 +11,6 @@ dev.web-gate.fr/MIT
 */
 
 .stocked .jarvis:nth-child(even){
-margin:-100%;
 position:absolute;
 left:-100%;
 /*transition*/
@@ -24,6 +23,7 @@ left:-100%;
 opacity:0;
 }
 .stocked .jarvis:nth-child(odd){
+margin-right:100%;
 margin-top:-1000% !important;
 right:-100% !important;
 /*transition*/
@@ -58,8 +58,24 @@ margin-left:1000% !important;
      -o-transition:all 0s ease;
         transition:all 0s ease;
 }
-*[class*="jv-"]{
+.stocked p.jarvis{
+margin-top:1000% !important;
+left:-100% !important;
+/*transition*/
+-webkit-transition:all 0s ease;
+   -moz-transition:all 0s ease;
+     -o-transition:all 0s ease;
+        transition:all 0s ease;
+}
+.stocked .inner-jarvis{
 display:block;
+top:1000em !important;
+color:transparent;
+/*transition*/
+-webkit-transition:all 1s ease 4s !important;
+   -moz-transition:all 1s ease 4s !important;
+     -o-transition:all 1s ease 4s !important;
+        transition:all 1s ease 4s !important;
 }
 *[class*="jv-"]:nth-child(odd){
 position:relative;
@@ -93,12 +109,12 @@ position:relative;
      -o-transition:all 1.4s ease 1.2s;
         transition:all 1.4s ease 1.2s;
 }
-img[class*="jv-"]{
+p[class*="jv-"]:nth-child(2n+1){
 /*transition*/
--webkit-transition:all 3s ease 1.2s !important;
-   -moz-transition:all 3s ease 1.2s !important;
-     -o-transition:all 3s ease 1.2s !important;
-        transition:all 3s ease 1.2s !important;
+-webkit-transition:all 2s ease .5s !important;
+   -moz-transition:all 2s ease .5s !important;
+     -o-transition:all 2s ease .5s !important;
+        transition:all 2s ease .5s !important;
 }
 img[class*="jv-"]:nth-child(2n+1){
 /*transition*/
@@ -109,12 +125,58 @@ img[class*="jv-"]:nth-child(2n+1){
 }
 a[class*="jv-"]:nth-child(2n+1){
 /*transition*/
+-webkit-transition:all 3s ease .4s !important;
+   -moz-transition:all 3s ease .4s !important;
+     -o-transition:all 3s ease .4s !important;
+        transition:all 3s ease .4s !important;
+}
+img[class*="jv-"].jarvis-pict{
+/*transition*/
+-webkit-transition:all 5s ease 2s !important;
+   -moz-transition:all 5s ease 2s !important;
+     -o-transition:all 5s ease 2s !important;
+        transition:all 5s ease 2s !important;
+opacity:0 !important;
+}
+.jarvis p[class*="jv-"]:nth-child(2n+1){
+/*transition*/
 -webkit-transition:all 3s ease .2s !important;
    -moz-transition:all 3s ease .2s !important;
      -o-transition:all 3s ease .2s !important;
         transition:all 3s ease .2s !important;
 }
-/*Loader*/
+.jarvis img[class*="jv-"]:nth-child(2n+1){
+/*transition*/
+-webkit-transition:all 2s ease 1s !important;
+   -moz-transition:all 2s ease 1s !important;
+     -o-transition:all 2s ease 1s !important;
+        transition:all 2s ease 1s !important;
+}
+
+.inner-jarvis{
+color:#000;
+}
+.jarvis img{
+/*transition*/
+-webkit-transition:all 2s cubic-bezier(0,1.57,1,.37) !important;
+   -moz-transition:all 2s cubic-bezier(0,1.57,1,.37) !important;
+     -o-transition:all 2s cubic-bezier(0,1.57,1,.37) !important;
+        transition:all 2s cubic-bezier(0,1.57,1,.37) !important;
+}
+.jarvis p{
+/*animation*/
+-webkit-animation:init 4s cubic-bezier(0,1.57,1,.37) 1s !important;
+   -moz-animation:init 4s cubic-bezier(0,1.57,1,.37) 1s !important;
+    -ms-animation:init 4s cubic-bezier(0,1.57,1,.37) 1s !important;
+     -o-animation:init 4s cubic-bezier(0,1.57,1,.37) 1s !important;
+        animation:init 4s cubic-bezier(0,1.57,1,.37) 1s !important;
+}
+.jarvis a[class*="jv-"]{
+	-webkit-transition:all .2s ease !important;   
+	-moz-transition:all .2s ease !important;     
+	-o-transition:all .2s ease !important;        
+	transition:all .2s ease !important;}
+	/*Loader*/
 #st-screen{
 position:absolute;
 z-index:10;
@@ -126,6 +188,11 @@ background:-webkit-linear-gradient(#fbfbfb,#f8f8f8);
 background:   -moz-linear-gradient(#fbfbfb,#f8f8f8);
 background:     -o-linear-gradient(#fbfbfb,#f8f8f8);
 background:        linear-gradient(#fbfbfb,#f8f8f8);
+background:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#eee));
+background:-webkit-linear-gradient(#fff,#eee);
+background:   -moz-linear-gradient(#fff,#eee);
+background:     -o-linear-gradient(#fff,#eee);
+background:        linear-gradient(#fff,#eee);
 margin:0;
 }
 #loader{
